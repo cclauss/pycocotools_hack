@@ -13,7 +13,8 @@ install:
     #- pip install git+https://github.com/cocodataset/cocoapi/PythonAPI
     - wget https://github.com/cocodataset/cocoapi/archive/master.zip -O pycocotools.zip
     - unzip pycocotools.zip
+    - ls -Fla
     - rm pycocotools.zip
-    - cd PythonAPI ; make install ; cd
+    - cd pycocotools/PythonAPI ; make install ; cd
 script:
     - true
