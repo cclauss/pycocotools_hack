@@ -5,17 +5,21 @@ python:
     - 2.7
     - 3.6
 install:
-    - pip install --upgrade pip
+    - git clone https://github.com/cocodataset/cocoapi.git
+    - cd cocoapi/PythonAPI
+    - python setup.py install
+    
+    #- pip install --upgrade pip
     #- pip install pycocotools
     #- pip install git://github.com/cocodataset/cocoapi.git/PythonAPI
     #- pip install git://github.com/cocodataset/cocoapi.git
     #- pip install git+https://github.com/cocodataset/cocoapi/PythonAPI
     #- pip install git+https://github.com/cocodataset/cocoapi/PythonAPI
-    - wget https://github.com/cocodataset/cocoapi/archive/master.zip -O cocoapi-master.zip
-    - unzip cocoapi-master.zip
-    - mv cocoapi-master pycocotools
-    - cd pycocotools
-    - python PythonAPI/setup.py install
+    #- wget https://github.com/cocodataset/cocoapi/archive/master.zip -O cocoapi-master.zip
+    #- unzip cocoapi-master.zip
+    #- mv cocoapi-master pycocotools
+    #- cd pycocotools
+    #- python PythonAPI/setup.py install
     #- mv cocoapi-master pycocotools
     #- cd pycocotools
     #- pip install ./PythonAPI
