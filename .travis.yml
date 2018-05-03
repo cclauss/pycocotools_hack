@@ -1,0 +1,12 @@
+group: travis_latest
+language: python
+cache: pip
+python:
+    - 2.7
+    - 3.6
+install:
+    - pip install --upgrade pip
+    - pip install git://github.com/cocodataset/cocoapi/PythonAPI
+    #- pip install pycocotools
+script:
+    - true
