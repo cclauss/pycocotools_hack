@@ -15,7 +15,8 @@ install:
     - unzip cocoapi-master.zip
     - cd cocoapi-master/PythonAPI
     - pwd ; ls -la
-    - make all
+    #- make all
+    - pip install .
     - pwd ; ls -la
     - cd
     - pwd ; ls -la
