@@ -14,6 +14,6 @@ install:
     - wget https://github.com/cocodataset/cocoapi/archive/master.zip -O pycocotools.zip
     - unzip pycocotools.zip
     - rm pycocotools.zip
-    - cd PythonAPI ; make ; cd
+    - cd PythonAPI ; make install ; cd
 script:
     - true
