@@ -14,7 +14,8 @@ install:
     - wget https://github.com/cocodataset/cocoapi/archive/master.zip -O cocoapi-master.zip
     - unzip cocoapi-master.zip
     - mv cocoapi-master pycocotools
-    - python pycocotools/PythonAPI/setup.py install
+    - cd pycocotools
+    - python PythonAPI/setup.py install
     #- mv cocoapi-master pycocotools
     #- cd pycocotools
     #- pip install ./PythonAPI
